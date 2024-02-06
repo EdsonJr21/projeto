@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevLinks</title>
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    /* Adiciona o efeito de hover no botão */
+    #switch:hover {
+      transform: scale(1.1); /* Aumenta o tamanho do botão quando passar o mouse sobre ele */
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="profile">
+      <img src="./assets/avatar.png" alt="Foto de Edson olhando para a câmera com camiseta cinza" />
+    </div>
+    <p>@eds0n21</p>
+
+    <div id="switch-container" onclick="togglemode()">
+      <button id="switch" aria-label="Alterar tema">
+        <img src="./assets/moon-stars.svg" alt="Lua e estrelas" />
+      </button>
+      <span></span>
+    </div>
+
+    <ul>
+      <li>
+        <a href="https://edsoncriativo.com/" target="_blank">Veja meu portfólio</a>
+      </li>
+      <li>
+        <a href="https://www.amazon.com.br/" target="_blank">Baixe meu e-book</a>
+      </li>
+      <li>
+        <a href="https://www.patreon.com/" target="_blank">Patreon</a>
+      </li>
+      <li>
+        <a href="https://www.tiktok.com/login?lang=pt-BR&redirect_url=https%3A%2F%2Fwww.tiktok.com%2Fupload%3Flang%3Dpt-BR" target="_blank">TikTok</a>
+      </li>
+    </ul>
+    <div id="social-links">
+      <a href="https://github.com/" target="_blank">
+        <ion-icon name="logo-github"></ion-icon>
+      </a>
+      <a href="https://www.instagram.com/" target="_blank">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a>
+      <a href="https://br.linkedin.com" target="_blank">
+        <ion-icon name="logo-linkedin"></ion-icon>
+      </a>
+    </div>
+    <footer>
+      Feito com ❤️ por <a href="https://www.instagram.com/" target="_blank">@eds0n21</a>
+    </footer>
+  </div>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
